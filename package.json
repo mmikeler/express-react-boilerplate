@@ -1,0 +1,20 @@
+{
+  "name": "express-react-clear-install",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/mmikeler/express-react-clear-install.git",
+  "author": "mmikeler <mmikeler@mail.ru>",
+  "license": "MIT",
+  "private": false,
+  "dependencies": {
+    "concurrently": "^6.0.0"
+  },
+  "scripts": {
+    "server": "yarn --cwd server start",
+    "client": "yarn --cwd client start",
+    "start": "concurrently \"yarn server\" \"yarn client\""
+  },
+  "devDependencies": {
+    "eslint-plugin-react-hooks": "^4.2.0"
+  }
+}
